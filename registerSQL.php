@@ -26,11 +26,9 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
     type VARCHAR(32) NOT NULL
   )";
 
-if ($db->query($sql) === TRUE) {
-  echo "Table created successfully";
-} else {
+if ($db->query($sql) === FALSE) {
   echo "Error creating table: " . $db->error;
-}
+} 
 
 // SQL query to create properties table
 $sql = "CREATE TABLE IF NOT EXISTS properties (
@@ -49,11 +47,9 @@ $sql = "CREATE TABLE IF NOT EXISTS properties (
   FOREIGN KEY (seller_id) REFERENCES users(id)
 )";
 
-if ($db->query($sql) === TRUE) {
-echo "Table created successfully";
-} else {
-echo "Error creating table: " . $db->error;
-}
+if ($db->query($sql) === FALSE) {
+  echo "Error creating table: " . $db->error;
+} 
 
 // REGISTER USER
 if (isset($_POST['register'])) {
