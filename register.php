@@ -8,7 +8,6 @@
     <title>Registration Form</title>
   </head>
   <body>
-    <h1>Registration Form</h1>
     <div class="container">
 		<div class="title">Register</div>
 		<div class="content">

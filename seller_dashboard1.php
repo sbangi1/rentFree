@@ -56,8 +56,8 @@ $conn->close();
   </head>
   <body>
   <div id="add-property">
-  <a href="seller_dashboard.php"><img src="plus.png" alt="Add Property"></a>
-  <p>Press the plus to add your first property!</p>
+<a href="seller_dashboard.php"><img src="plus.png" alt="Add Property" id="plus" style="width: 30%; height: auto;"></a>
+  <h2>It seems you have no properties listed! Press the plus to add your first property!</h2>
 </div>
   </body>
 </html>
